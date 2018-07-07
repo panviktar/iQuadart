@@ -1,11 +1,48 @@
-$default-font: "roboto-example", sans-serif;
-$accent: orange;
-$text: #333;
+
+// VIEWPORT
+$screen--xs: 575px;
+$screen--sm: 768px;
+$screen--md: 991px;
+$screen--lg: 1199px;
+$xs: "(max-width: "$screen--xs")";
+$sm: "(max-width: "$screen--sm")";
+$md: "(max-width: "$screen--md")";
+$lg: "(max-width: "$screen--lg")";
+$offset: 15px;
+// VIEWPORT --END
+
+
+// FONTS
+$default-font: "Roboto", sans-serif;
+$fz--base: 16px;
+$fz--xxsmall: ceil($fz--base * 0.75); /* 12px */
+$fz--xsmall: ceil($fz--base * 0.88); /* 14px */
+$fz--small: ceil($fz--base * 0.94); /* 15px */
+$fz--medium: ceil($fz--base * 1.13); /* 18px */
+$fz--xmedium: ceil($fz--base * 1.5); /* 24px */
+$fz--large: ceil($fz--base * 1.86); /* 30px */
+$fz--xlarge: ceil($fz--base * 2.22); /* 40px */
+$fz--xxlarge: ceil($fz--base * 2.5); /* 62px */
+
+$normal: 400;
+$bold: 700;
+$light: 300;
+// FONTS--END
+
+
+// COLOR
+$accent: #acc705;
+$text: #0f0f0f;
+$text-white: #fff;
+// COLOR--END
+
+
+
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
-$grid-gutter-width: 30px;
-$grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+// $grid-gutter-width: 30px;
+// $grid-columns: 12;
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
 
-$gutter: $grid-gutter-width;
+// $gutter: $grid-gutter-width;

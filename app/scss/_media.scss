@@ -3,45 +3,38 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
-@include media-breakpoint-down(lg) {
+// ---LG 1199px---
+@media screen and (max-width: 1199px) { 
+	.container {
+		max-width: $lg;;
+	}
+ } 
+// ---LG 1199px---END
+
+
+
+// ---MD 991px---
+@media screen and (max-width: 991px) { 
+	.container {
+		max-width: $md;
+	}
 	
-}
-
-// ≥992px
-@include media-breakpoint-down(md) {
-
-}
-
-// ≥768px
-@include media-breakpoint-down(sm) {
-
-}
-
-// ≥576px
-@include media-breakpoint-down(xs) {
-
-}
+ } 
+// ---MD 991px---END
 
 
-/*==========  Mobile First  ==========*/
 
-// ≤576px
-@include media-breakpoint-up(sm) {
+// ---SM 768px---
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: $sm;;
+	}
+	} 
+// ---SM 768px---
 
-}
 
-// ≤768px
-@include media-breakpoint-up(md) {
-
-}
-
-// ≤992px
-@include media-breakpoint-up(lg) {
-
-}
-
-// ≤1200px
-@include media-breakpoint-up(xl) {
-	
-}
+// ---XS 575px---
+@media screen and (max-width: 575px) { 
+	max-width: $xs;;
+ }
+// ---XS 575px---END

@@ -1,4 +1,12 @@
 @import "_mixins/font-face";
-
 @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("roboto-example", "../fonts/RobotoLight/RobotoLight", 300);
+
+@include font-face("RobotoSlab-example", "../fonts/RobotoSlabRegular/RobotoSlabRegular");
+@include font-face("RobotoSlab-example", "../fonts/RobotoSlabBold/RobotoSlabBold", bold);
+@include font-face("RobotoSlab-example", "../fonts/RobotoSlabLight/RobotoSlabLight", 300);
+
+@include font-face("FA", "../libs/font-awesome/webfonts/fa-brands-400", 300);
+@include font-face("FA", "../libs/font-awesome/webfonts/fa-solid-900", 300);
+@include font-face("FA", "../libs/font-awesome/webfonts/fa-regular-400", 300);

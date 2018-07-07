@@ -15,7 +15,7 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 1.7;
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
@@ -30,6 +30,15 @@ body {
 		}
 	}
 }
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: $screen--lg;
+  padding-left: $offset;
+	padding-right: $offset;
+
+ }
 
 .img-responsive {
 	display: block;
