@@ -1,61 +1,30 @@
 @import "vars";
 @import "fonts";
 @import "libs";
+@import "normalize";
 
-::placeholder {
-	color: #666;
-}
+@import "_mixins/title";
 
-::selection {
-	background-color: $accent;
-	color: #fff;
-}
+@import "_block/base";
+@import "_block/page-header";
+@import "_block/content";
 
-body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.7;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
-}
 
-.container {
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: $screen--lg;
-  padding-left: $offset;
-	padding-right: $offset;
 
- }
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
-}
+// .full-screen .anchor {
+// 	position: absolute;
+// 	z-index: 5;
+// 	bottom: 34px;
+// 	left: 50%;
+// 	margin-left: -18px;
+// 	width: 35px;
+// 	height: 35px;
+// 	background: url(../i/anchor-arrow.svg) no-repeat 50% 50%/ 15px 9px;
+// 	cursor: pointer;
+// }
 
-.text-center {
-	text-align: center;
-}
 
-b, strong {
-	font-weight: bold;
-}
 
 
 

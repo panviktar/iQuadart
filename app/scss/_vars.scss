@@ -8,21 +8,22 @@ $xs: "(max-width: "$screen--xs")";
 $sm: "(max-width: "$screen--sm")";
 $md: "(max-width: "$screen--md")";
 $lg: "(max-width: "$screen--lg")";
-$offset: 15px;
+$offset: 30px;
 // VIEWPORT --END
 
 
 // FONTS
-$default-font: "Roboto", sans-serif;
+$default-font: "roboto-example", sans-serif;
 $fz--base: 16px;
 $fz--xxsmall: ceil($fz--base * 0.75); /* 12px */
-$fz--xsmall: ceil($fz--base * 0.88); /* 14px */
-$fz--small: ceil($fz--base * 0.94); /* 15px */
-$fz--medium: ceil($fz--base * 1.13); /* 18px */
+$fz--xsmall: ceil($fz--base * 0.8); /* 14px */
+$fz--small: ceil($fz--base * 0.9); /* 15px */
+$fz--medium: ceil($fz--base * 1.1); /* 18px */
 $fz--xmedium: ceil($fz--base * 1.5); /* 24px */
-$fz--large: ceil($fz--base * 1.86); /* 30px */
-$fz--xlarge: ceil($fz--base * 2.22); /* 40px */
-$fz--xxlarge: ceil($fz--base * 2.5); /* 62px */
+$fz--large: ceil($fz--base * 1.8); /* 30px */
+$fz--xlarge: ceil($fz--base * 2.5); /* 40px */
+$fz--xxlarge: ceil($fz--base * 3); /* 48px */
+$fz--huge: ceil($fz--base * 3.8); /* 62px */
 
 $normal: 400;
 $bold: 700;
@@ -33,7 +34,8 @@ $light: 300;
 // COLOR
 $accent: #acc705;
 $text: #0f0f0f;
-$text-white: #fff;
+$text--white: #fff;
+$bg--white: #fff;
 // COLOR--END
 
 

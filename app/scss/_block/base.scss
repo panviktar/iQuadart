@@ -1,0 +1,112 @@
+@import "../vars";
+@import "../fonts";
+@import "../libs";
+@import "../_mixins/title";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.7;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: $screen--lg;
+  padding-left: $offset;
+	padding-right: $offset;
+
+ }
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.btn {
+	position: relative;
+	text-decoration: none;
+	font-family: $default-font;
+	cursor: pointer;
+	outline: none;
+	transition: all 300ms ease;
+	border: none;
+	opacity: 1;
+	}
+
+.btn-link {
+	font-family: "RobotoSlab-example, sans-serif";
+	font-size: $fz--medium;
+	color: $accent;
+	font-weight: $normal;
+	padding: 8px 22px;
+	background-color: $bg--white;
+	border: 2px solid $accent;
+	padding: 15px 70px;
+	
+	&:hover {
+		color: $text--white;
+		background-color: $accent;
+		border: none;
+	}
+
+	&:active {
+		color: $text--white;
+		background-color: lighten($accent, 20%);
+		border: 2px solid $accent;
+	}
+}
+
+.c-link {
+	font-family: $default-font;
+	color: $text;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	opacity: 1;
+	&:hover {
+		color: $accent;
+	}
+	&:active {
+		color: $accent;
+		opacity: 0.6;
+	}	
+}
+
+.visually-hidden {
+  @include hidden;
+}
