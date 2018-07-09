@@ -3,165 +3,177 @@
 
 // ---LG 1199px---
 @media screen and (max-width: 1199px) {
-	.container {
-		max-width: $lg;
-	}
-
-	.catalog {
-		.post {
-			span {
-				font-size: $fz--medium;
-			}
-		}
-	}
+  .container {
+    max-width: $lg;
+  }
+  .main-nav {
+    .btn-menu {
+      display: none;
+    }
+  }
+  .catalog {
+    .post {
+      span {
+        font-size: $fz--medium;
+      }
+    }
+  }
 }
 
-
-
 // ---LG 1199px---END
-
-
-
-
 // ---MD 991px---
 @media screen and (max-width: 991px) {
-
-	.main-nav {
-		.toggle-mnu {
-			display: block;
-		}
-		&__list {
-			display: none;
-		}
-	}
-
-
-
-	.catalog {
-		.post {
-			width: 48%;
-			margin-right: 0;
-			&:nth-child(3),
-			&:nth-child(6) {
-			margin-right: 0;
-		}
-			span {
-				font-size: $fz--medium;
-			}
-		}
-	}
-
-
-
-	.page-footer {
-		&__wrapper {
-			flex-direction: column;
-			flex-wrap: wrap
-		}
-		&__address {
-			width: 100%;
-		}
-		&__item {
-			width: 40%;
-			&--3 {
-				width: 20%;
-			}
-		}
-	}
-	.container {
-		max-width: $md;
-	}
+  .page-header {
+    &__title-after {
+      font-size: $fz--xlarge;
+    }
+    &__title {
+      font-size: $fz--xxlarge;
+      margin-bottom: 15px;
+      margin-top: 7px;
+    }
+    &__title-before {
+      font-size: $fz--base;
+    }
+  }
+  .main-nav {
+    .btn-menu {
+      display: block;
+    }
+    &__list {
+      display: none;
+    }
+  }
+  .catalog {
+    .post {
+      width: 48%;
+      margin-right: 0;
+      &:nth-child(3),
+      &:nth-child(6) {
+        margin-right: 0;
+      }
+      span {
+        font-size: $fz--medium;
+      }
+    }
+  }
+  .page-footer {
+    &__wrapper {
+      flex-direction: column;
+      flex-wrap: wrap
+    }
+    &__address {
+      width: 100%;
+    }
+    &__item {
+      width: 40%;
+      &--3 {
+        width: 20%;
+      }
+    }
+  }
+  .container {
+    max-width: $md;
+  }
 }
 
 // ---MD 991px---END
-
-
-
 // ---SM 768px---
 @media screen and (max-width: 768px) {
-	
-	.page-footer {
-		&__item {
-			p {
-				font-size: $fz--xsmall;
-			}
-			a {
-				font-size: $fz--xxsmall;
-			}
-			span {
-				top: 2px;
-			}
-			&--1,
-			&--2 {
-				p {
-					padding-left: 60px;
-				}
-			}
-		}
-	}
-	.container {
-		max-width: $sm;
-	}
+  .description {
+    &__colum {
+			display: block;
+			width: 80%;
+      p {
+        font-size: $fz--small;
+      }
+    }
+  }
+  .page-footer {
+    &__item {
+      p {
+        font-size: $fz--xsmall;
+      }
+      a {
+        font-size: $fz--xxsmall;
+      }
+      span {
+        top: 2px;
+      }
+      &--1,
+      &--2 {
+        p {
+          padding-left: 60px;
+        }
+      }
+    }
+  }
+  .container {
+    max-width: $sm;
+  }
 }
 
-// ---SM 768px---
+// ---SM 768px---END
 // ---XS 575px---
 @media screen and (max-width: 575px) {
-
-
-	.catalog {
-		&__wraper {
-		justify-content: center;
-		padding: 30px 0 50px 0;
-		}
-		.post {
-			width: 60%;
-			}
-	}
-
-	.page-footer {
-		&__wrapper {
-			padding-bottom: 10px;
-		}
-
-		&__address {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			margin-top: 15px;
-			}
-
-		&__item {					
-			margin-bottom: 15px;
-			display: block;
-			width: 100%;
-			text-align: center;
-
-			&--1,
-			&--2 {
-				p{
-					padding-left: 0;
-				}
-			
-				span {
-					position: relative;
-					padding-right: 20px;
-					top: 0;
-				}
-			}
-			
-			&--3 {
-				width: 100%;
-			}
-		}
-	}
 	
-	.container {
-		max-width: $xs;
-		padding-left: 0;
-		padding-right: 0;
-		margin-left: -15px;
-	}
+
+  .page-header {
+    &__title-after {
+      font-size: $fz--large;
+    }
+    &__title {
+      font-size: $fz--xlarge;
+    }
+    &__title-before {
+      font-size: $fz--small;
+    }
+  }
+  .catalog {
+    &__wraper {
+      justify-content: center;
+      padding: 30px 0 50px 0;
+    }
+    .post {
+      width: 60%;
+    }
+  }
+  .page-footer {
+    &__wrapper {
+      padding-bottom: 10px;
+    }
+    &__address {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 15px;
+    }
+    &__item {
+      margin-bottom: 15px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      &--1,
+      &--2 {
+        p {
+          padding-left: 0;
+        }
+        span {
+          position: relative;
+          padding-right: 20px;
+          top: 0;
+        }
+      }
+      &--3 {
+        width: 100%;
+      }
+    }
+  }
+  .container {
+    max-width: $xs;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 // ---XS 575px---END

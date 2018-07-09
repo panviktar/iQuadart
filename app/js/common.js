@@ -8,22 +8,38 @@ $(function() {
 			var elem = $('#top_nav');
 			if (top+h_mrg < h_hght) {
 			 elem.css('top', (h_hght-top));
-			 $('#nav-opacity').css('opacity','0') ;
+			 $('#nav-opacity').css('opacity','0');
 			} else {
 			 elem.css('top', h_mrg);
 			 $('#nav-opacity').css('opacity','0.7');
+			 
 			}
 		});
 	});
 
-	// $(".toggle-mnu").click(function() {
-	// 	$(this).toggleClass("on");
-	// 	$(".main-mnu").slideToggle();
-	// 	return false;
-	// });
+	(function() {
+		'use strict';
+	
+		var btnScrollDown = document.querySelector('#scroll_down');
+	
+		function scrollDown() {
+			var windowCoords = document.documentElement.clientHeight;
+			(function scroll() {
+				if (window.pageYOffset < windowCoords) {
+					window.scrollBy(0, 5);
+					setTimeout(scroll, 0);
+				}
+				if (window.pageYOffset > windowCoords) {
+					window.scrollTo(0, windowCoords);
+				}
+			})();
+		}
+	
+		btnScrollDown.addEventListener('click', scrollDown);
+	})();
 
 
 
-	// Custom JS
+
 
 });
