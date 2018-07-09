@@ -1,14 +1,10 @@
-
 @import "vars";
 @import "fonts";
 @import "libs";
 @import "normalize";
 @import "_mixins/title";
-
 @import "_block/base";
 @import "_block/page-header";
 @import "_block/content";
 @import "_block/page-footer";
-
-
 @import "media"; // Always at the end

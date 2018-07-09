@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1;
   &__bg-screen {
+    background-image: url(../img/bg/bg_make-up.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,42 +16,42 @@
   }
   &__wraper {
     position: relative;
-	}
-	
-
-	.scroll_down {
-		position: absolute;
-		left: 30px;
-		height: 50px;
-		width: 30px;
-		bottom: 30px;
-		background-color: transparent;
-		border:none;
-		cursor: pointer;
-		outline: none;
-		.fas {
-			font-family: "FA";
-			font-size: $fz--xxlarge;
-			transition: all .3s ease;
-			color: #fff; 
-		}
-		&:hover {
-			animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
-	}
-	@keyframes trambling-animation {
-			0%, 50%, 100% {
-					transform: rotate(0deg);
-			}
-			10%, 30% {
-					transform: rotate(-10deg);
-			}
-			20%, 40% {
-					transform: rotate(10deg);
-			}
-	}
-	}
-
-
+  }
+  .scroll_down {
+    position: absolute;
+    left: 30px;
+    height: 50px;
+    width: 30px;
+    bottom: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    .fas {
+      font-family: "FA";
+      font-size: $fz--xxlarge;
+      transition: all .3s ease;
+      color: #fff;
+    }
+    &:hover {
+      animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    }
+    @keyframes trambling-animation {
+      0%,
+      50%,
+      100% {
+        transform: rotate(0deg);
+      }
+      10%,
+      30% {
+        transform: rotate(-10deg);
+      }
+      20%,
+      40% {
+        transform: rotate(10deg);
+      }
+    }
+  }
   &__title-wraper {
     padding: 200px 0 200px;
     color: $text--white;
@@ -110,7 +111,7 @@
 }
 
 .btn-menu {
-	display: none;
+  display: none;
   color: #fff;
   background-color: $accent;
   padding: 7px;

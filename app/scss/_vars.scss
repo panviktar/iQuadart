@@ -1,4 +1,3 @@
-
 // VIEWPORT
 $screen--xs: 575px;
 $screen--sm: 768px;
@@ -11,40 +10,50 @@ $lg: "(max-width: "$screen--lg")";
 $offset: 30px;
 $offset--small: 10px;
 // VIEWPORT --END
-
-
 // FONTS
-$default-font: "roboto-example", sans-serif;
+$default-font: "roboto-example",
+sans-serif;
 $fz--base: 16px;
-$fz--xxsmall: ceil($fz--base * 0.75); /* 12px */
-$fz--xsmall: ceil($fz--base * 0.8); /* 14px */
-$fz--small: ceil($fz--base * 0.9); /* 15px */
-$fz--medium: ceil($fz--base * 1.1); /* 18px */
-$fz--xmedium: ceil($fz--base * 1.5); /* 24px */
-$fz--large: ceil($fz--base * 1.8); /* 30px */
-$fz--xlarge: ceil($fz--base * 2.5); /* 40px */
-$fz--xxlarge: ceil($fz--base * 3); /* 48px */
-$fz--huge: ceil($fz--base * 3.8); /* 62px */
+$fz--xxsmall: ceil($fz--base * 0.75);
+/* 12px */
+
+$fz--xsmall: ceil($fz--base * 0.8);
+/* 14px */
+
+$fz--small: ceil($fz--base * 0.9);
+/* 15px */
+
+$fz--medium: ceil($fz--base * 1.1);
+/* 18px */
+
+$fz--xmedium: ceil($fz--base * 1.5);
+/* 24px */
+
+$fz--large: ceil($fz--base * 1.8);
+/* 30px */
+
+$fz--xlarge: ceil($fz--base * 2.5);
+/* 40px */
+
+$fz--xxlarge: ceil($fz--base * 3);
+/* 48px */
+
+$fz--huge: ceil($fz--base * 3.8);
+/* 62px */
 
 $normal: 400;
 $bold: 700;
 $light: 300;
 // FONTS--END
-
-
 // COLOR
 $accent: #acc705;
 $text: #0f0f0f;
 $text--white: #fff;
 $bg--white: #fff;
 // COLOR--END
-
-
-
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 // $grid-gutter-width: 30px;
 // $grid-columns: 12;
 // $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 // $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
-
 // $gutter: $grid-gutter-width;
