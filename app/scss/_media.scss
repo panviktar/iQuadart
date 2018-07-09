@@ -22,8 +22,20 @@
 
 
 
+
 // ---MD 991px---
 @media screen and (max-width: 991px) {
+
+	.main-nav {
+		.toggle-mnu {
+			display: block;
+		}
+		&__list {
+			display: none;
+		}
+	}
+
+
 
 	.catalog {
 		.post {

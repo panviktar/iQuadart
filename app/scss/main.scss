@@ -1,32 +1,14 @@
+
 @import "vars";
 @import "fonts";
 @import "libs";
 @import "normalize";
-
 @import "_mixins/title";
 
 @import "_block/base";
 @import "_block/page-header";
 @import "_block/content";
 @import "_block/page-footer";
-
-
-
-
-// .full-screen .anchor {
-// 	position: absolute;
-// 	z-index: 5;
-// 	bottom: 34px;
-// 	left: 50%;
-// 	margin-left: -18px;
-// 	width: 35px;
-// 	height: 35px;
-// 	background: url(../i/anchor-arrow.svg) no-repeat 50% 50%/ 15px 9px;
-// 	cursor: pointer;
-// }
-
-
-
 
 
 @import "media"; // Always at the end

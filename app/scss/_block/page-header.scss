@@ -70,12 +70,12 @@
     display: flex;
     justify-content: space-between;
 		align-items: center;
-		
-  }
+		}	
   &__logo-wraper {
     width: 20%;
-  }
-  &__list {
+	}
+	
+		&__list {
     display: flex;
     width: 75%;
     justify-content: flex-end;
@@ -95,3 +95,6 @@
     }
   }
 }
+
+
+
