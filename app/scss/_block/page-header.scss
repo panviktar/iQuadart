@@ -2,8 +2,7 @@
 .page-header {
 	position: relative;
 	z-index: 1;
-	opacity: 0.99;
-	
+		
   &__bg-screen {
     background-position: center;
     background-repeat: no-repeat;
@@ -51,9 +50,10 @@
   top: 40px;
   width: 100%;
   position: fixed;
-  z-index: 999;
+  z-index: 5;
   display: flex;
-  align-items: center;
+	align-items: center;
+	
   &__opasity {
     position: absolute;
     top: 0;
@@ -69,7 +69,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+		align-items: center;
+		
   }
   &__logo-wraper {
     width: 20%;
@@ -80,14 +81,17 @@
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-    padding: 0;
+		padding: 0;
+		
   }
   &__item {
-    margin: 0 10px 5px 10px;
-    a {
+		margin: 0 10px 5px 10px;
+		  a {
       @include c-link;
       color: $text--white;
-      font-size: $fz--small;
+			font-size: $fz--small;
+			position: relative;
+			z-index: 999;
     }
   }
 }
