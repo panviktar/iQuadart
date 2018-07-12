@@ -1,83 +1,8 @@
 @import "../_mixins/title";
 .page-header {
   position: relative;
-  z-index: 1;
-  &__bg-screen {
-    background-image: url(../img/bg/bg_make-up.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #6b6a2c;
-    z-index: 1;
-  }
-  &__wraper {
-    position: relative;
-  }
-  .scroll_down {
-    position: absolute;
-    left: 30px;
-    height: 70px;
-		width: 70px;
-		padding: 10px;
-    bottom: 30px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    .fas {
-      font-family: "FA";
-      font-size: $fz--xxlarge;
-      transition: all .3s ease;
-      color: #fff;
-    }
-    &:hover {
-      animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
-    }
-    @keyframes trambling-animation {
-      0%,
-      50%,
-      100% {
-        transform: rotate(0deg);
-      }
-      10%,
-      30% {
-        transform: rotate(-10deg);
-      }
-      20%,
-      40% {
-        transform: rotate(10deg);
-      }
-    }
-  }
-  &__title-wraper {
-    padding: 200px 0 200px;
-    color: $text--white;
-  }
-  &__title-after {
-    font-family: "RobotoSlab-example, sans-serif";
-    font-size: $fz--xxlarge;
-    margin: 0;
-    padding: 0;
-  }
-  &__title {
-    @include h1;
-    margin-bottom: 5px;
-    margin-top: -15px;
-    span {
-      color: $accent;
-    }
-  }
-  &__title-before {
-    font-size: $fz--medium;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-}
+  z-index: 999;
+  
 
 .hidden-menu {
   display: block;
@@ -96,7 +21,7 @@
   z-index: 2;
   &__item {
     padding: 7px 0;
-    text-align: right;
+			text-align: right;
     a {
       font-family: $default-font;
       @include c-link;
@@ -209,4 +134,5 @@
       z-index: 999;
     }
   }
+}
 }

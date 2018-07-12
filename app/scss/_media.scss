@@ -5,22 +5,21 @@
 @media screen and (max-width: 1199px) {
   .container {
     max-width: $lg;
-  }
-  .page-header {
+	}
+	.page-header {
+	.main-nav {
+    .btn-menu {
+      display: none;
+    }
+	}
+}
+	
+  .main-top {
     &__bg-screen {
       background-image: url(../img/bg/bg_make-up--lg.jpg);
     }
   }
-  .main-nav {
-    .btn-menu {
-      display: none;
-    }
-  }
-  .description {
-    &__bg-img {
-      background-image: url(../img/bg/bg_description--lg.png);
-    }
-  }
+    
   .catalog {
     .post {
       span {
@@ -33,7 +32,22 @@
 // ---LG 1199px---END
 // ---MD 991px---
 @media screen and (max-width: 991px) {
-  .page-header {
+
+	.page-header {
+		.main-nav {
+			.btn-menu {
+				display: block;
+			}
+			&__list {
+				display: none;
+			}
+		}
+	}
+
+  .main-top {
+		.scroll_down {
+			display: none;
+		}
     &__bg-screen {
       background-image: url(../img/bg/bg_make-up--md.jpg);
     }
@@ -49,28 +63,16 @@
       font-size: $fz--base;
     }
   }
-  .main-nav {
-    .btn-menu {
-      display: block;
-    }
-    &__list {
-      display: none;
-    }
-  }
+ 
   .description {
-    &__bg-img {
-      background-image: url(../img/bg/bg_description--md.png);
-      background-size: cover;
-    }
     &__wraper {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 220px;
+    	padding-bottom: 0;
     }
   }
   .catalog {
     &__wraper {
-      padding-top: 90px;
-      padding-bottom: 90px;
+			padding: 330px 0 100px 0;
     }
     .post {
       width: 48%;
@@ -107,22 +109,24 @@
 // ---MD 991px---END
 // ---SM 768px---
 @media screen and (max-width: 768px) {
-  .page-header {
+  .main-top {
     &__bg-screen {
       background-image: url(../img/bg/bg_make-up--sm.jpg);
     }
   }
   .description {
-    &__bg-img {
-      background-image: url(../img/bg/bg_description--sm.png);
-    }
-    &__wraper {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+		margin-top: -170px;
+     &__wraper {
+			padding-top: 200px;
+			padding-bottom: 40px;
+		}
+		
+		&__colums {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
     &__colum {
-      display: block;
-      width: 80%;
+			 width: 100%;
       p {
         font-size: $fz--small;
       }
@@ -130,8 +134,7 @@
   }
   .catalog {
     &__wraper {
-      padding-top: 60px;
-      padding-bottom: 40px;
+			padding: 220px 0 50px 0;
     }
   }
   .page-footer {
@@ -161,9 +164,9 @@
 // ---SM 768px---END
 // ---XS 575px---
 @media screen and (max-width: 575px) {
-  .page-header {
+  .main-top {
     &__bg-screen {
-      background-image: url(../img/bg/bg_make-up--xs.jpg);
+      background-image: url(../img/bg/bg_make-up--sm.jpg);
     }
     &__title-after {
       font-size: $fz--large;
@@ -175,15 +178,16 @@
       font-size: $fz--small;
     }
   }
-  .description {
-    &__bg-img {
-      background-image: url(../img/bg/bg_description--xs.png);
-    }
-  }
+  .description  {
+		&__wraper {
+			padding-top: 200px;
+		}
+	}
   .catalog {
+		margin-top: -250px;
     &__wraper {
       justify-content: center;
-      padding: 70px 0 50px 0;
+			padding: 350px 0 50px 0;
     }
     .post {
       width: 60%;
